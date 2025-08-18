@@ -219,7 +219,8 @@ body {
 .story-section,
 .howto-section,
 .characters-section,
-.features-section {
+.features-section,
+.controls-section {
     padding: 80px 0;
 }
 
@@ -309,7 +310,25 @@ body {
     max-width: 300px;
 }
 
+/* Special styling for Controls section image - make it smaller as requested */
+.controls-section .controls-image {
+    height: 250px;
+    max-width: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.controls-section .controls-image:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
 /* Alternating background colors for sections */
+.controls-section {
+    background: rgba(255, 160, 122, 0.2);
+}
+
 .story-section {
     background: rgba(255, 182, 193, 0.3);
 }
@@ -431,7 +450,8 @@ body {
     .story-section,
     .howto-section,
     .characters-section,
-    .features-section {
+    .features-section,
+    .controls-section {
         padding: 60px 0;
     }
 }
@@ -443,7 +463,8 @@ html {
 
 /* Loading animation for images */
 .feature-image,
-.game-screenshot {
+.game-screenshot,
+.controls-image {
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
 }
