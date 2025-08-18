@@ -256,7 +256,7 @@ body {
 }
 
 .section-text h3 {
-    font-family: 'Pixelify Sans', monospace;
+    font-family: 'DotGothic16', 'Pixelify Sans', monospace;
     font-size: 2rem;
     color: var(--secondary-pink);
     margin-bottom: 20px;
