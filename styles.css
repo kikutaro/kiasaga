@@ -10,10 +10,19 @@
     --secondary-pink: #ff1493;
     --light-pink: #ffb6c1;
     --soft-pink: #ffc0cb;
+    --light-yellow: #ffeb3b;
+    --light-blue: #4fc3f7;
+    --light-green: #81c784;
     --white: #ffffff;
     --text-dark: #333333;
     --gradient-pink: linear-gradient(135deg, #ff69b4, #ff1493);
+    --gradient-yellow: linear-gradient(135deg, #ffeb3b, #ffc107);
+    --gradient-blue: linear-gradient(135deg, #4fc3f7, #2196f3);
+    --gradient-green: linear-gradient(135deg, #81c784, #4caf50);
     --shadow: 0 4px 20px rgba(255, 105, 180, 0.3);
+    --shadow-yellow: 0 4px 20px rgba(255, 235, 59, 0.3);
+    --shadow-blue: 0 4px 20px rgba(79, 195, 247, 0.3);
+    --shadow-green: 0 4px 20px rgba(129, 199, 132, 0.3);
     --border-radius: 15px;
 }
 
@@ -219,6 +228,9 @@ body {
 .story-section,
 .howto-section,
 .characters-section,
+.profile-section,
+.quiz-section,
+.bgm-section,
 .features-section,
 .controls-section {
     padding: 80px 0;
@@ -343,6 +355,43 @@ body {
 
 .features-section {
     background: rgba(255, 20, 147, 0.1);
+}
+
+/* New sections with balanced colors */
+.profile-section {
+    background: rgba(255, 235, 59, 0.15);
+}
+
+.profile-section .section-text h3 {
+    color: #f57f17;
+}
+
+.profile-section .section-text p {
+    box-shadow: var(--shadow-yellow);
+}
+
+.quiz-section {
+    background: rgba(79, 195, 247, 0.15);
+}
+
+.quiz-section .section-text h3 {
+    color: #0277bd;
+}
+
+.quiz-section .section-text p {
+    box-shadow: var(--shadow-blue);
+}
+
+.bgm-section {
+    background: rgba(129, 199, 132, 0.15);
+}
+
+.bgm-section .section-text h3 {
+    color: #2e7d32;
+}
+
+.bgm-section .section-text p {
+    box-shadow: var(--shadow-green);
 }
 
 /* Footer */
