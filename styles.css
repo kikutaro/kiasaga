@@ -303,6 +303,12 @@ body {
     transform: scale(1.05) rotate(2deg);
 }
 
+/* Special styling for How to Play section image - make it taller */
+.howto-section .feature-image {
+    height: 500px;
+    max-width: 300px;
+}
+
 /* Alternating background colors for sections */
 .story-section {
     background: rgba(255, 182, 193, 0.3);
