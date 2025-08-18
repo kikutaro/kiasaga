@@ -306,7 +306,7 @@ body {
 /* Special styling for How to Play section image - make it taller */
 .howto-section .feature-image {
     height: 500px;
-    max-width: 300px;
+    max-width: 320px;
 }
 
 /* Alternating background colors for sections */
