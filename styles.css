@@ -10,10 +10,19 @@
     --secondary-pink: #ff1493;
     --light-pink: #ffb6c1;
     --soft-pink: #ffc0cb;
+    --light-yellow: #ffeb3b;
+    --light-blue: #4fc3f7;
+    --light-green: #81c784;
     --white: #ffffff;
     --text-dark: #333333;
     --gradient-pink: linear-gradient(135deg, #ff69b4, #ff1493);
+    --gradient-yellow: linear-gradient(135deg, #ffeb3b, #ffc107);
+    --gradient-blue: linear-gradient(135deg, #4fc3f7, #2196f3);
+    --gradient-green: linear-gradient(135deg, #81c784, #4caf50);
     --shadow: 0 4px 20px rgba(255, 105, 180, 0.3);
+    --shadow-yellow: 0 4px 20px rgba(255, 235, 59, 0.3);
+    --shadow-blue: 0 4px 20px rgba(79, 195, 247, 0.3);
+    --shadow-green: 0 4px 20px rgba(129, 199, 132, 0.3);
     --border-radius: 15px;
 }
 
@@ -219,7 +228,11 @@ body {
 .story-section,
 .howto-section,
 .characters-section,
-.features-section {
+.profile-section,
+.quiz-section,
+.bgm-section,
+.features-section,
+.controls-section {
     padding: 80px 0;
 }
 
@@ -243,7 +256,7 @@ body {
 }
 
 .section-text h3 {
-    font-family: 'Pixelify Sans', monospace;
+    font-family: 'DotGothic16', 'Pixelify Sans', monospace;
     font-size: 2rem;
     color: var(--secondary-pink);
     margin-bottom: 20px;
@@ -309,7 +322,25 @@ body {
     max-width: 320px;
 }
 
+/* Special styling for Controls section image - make it smaller as requested */
+.controls-section .controls-image {
+    height: 250px;
+    max-width: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.controls-section .controls-image:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
 /* Alternating background colors for sections */
+.controls-section {
+    background: rgba(255, 160, 122, 0.2);
+}
+
 .story-section {
     background: rgba(255, 182, 193, 0.3);
 }
@@ -324,6 +355,43 @@ body {
 
 .features-section {
     background: rgba(255, 20, 147, 0.1);
+}
+
+/* New sections with balanced colors */
+.profile-section {
+    background: rgba(255, 235, 59, 0.15);
+}
+
+.profile-section .section-text h3 {
+    color: #f57f17;
+}
+
+.profile-section .section-text p {
+    box-shadow: var(--shadow-yellow);
+}
+
+.quiz-section {
+    background: rgba(79, 195, 247, 0.15);
+}
+
+.quiz-section .section-text h3 {
+    color: #0277bd;
+}
+
+.quiz-section .section-text p {
+    box-shadow: var(--shadow-blue);
+}
+
+.bgm-section {
+    background: rgba(129, 199, 132, 0.15);
+}
+
+.bgm-section .section-text h3 {
+    color: #2e7d32;
+}
+
+.bgm-section .section-text p {
+    box-shadow: var(--shadow-green);
 }
 
 /* Footer */
@@ -431,7 +499,8 @@ body {
     .story-section,
     .howto-section,
     .characters-section,
-    .features-section {
+    .features-section,
+    .controls-section {
         padding: 60px 0;
     }
 }
@@ -443,7 +512,8 @@ html {
 
 /* Loading animation for images */
 .feature-image,
-.game-screenshot {
+.game-screenshot,
+.controls-image {
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
 }
