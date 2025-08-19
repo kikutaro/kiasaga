@@ -224,6 +224,77 @@ body {
     display: inline-block;
 }
 
+/* Feedback Section */
+.feedback-section {
+    padding: 60px 0;
+    text-align: center;
+    background: rgba(255, 235, 59, 0.1);
+}
+
+.feedback-section h2 {
+    font-family: 'Pixelify Sans', monospace;
+    font-size: 2.2rem;
+    color: var(--secondary-pink);
+    margin-bottom: 20px;
+}
+
+.feedback-description {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 25px;
+    border-radius: var(--border-radius);
+    display: inline-block;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(255, 193, 7, 0.2);
+}
+
+.feedback-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--gradient-yellow);
+    color: var(--text-dark);
+    text-decoration: none;
+    padding: 18px 35px;
+    font-size: 1.4rem;
+    font-family: 'DotGothic16', monospace;
+    border-radius: 50px;
+    box-shadow: var(--shadow-yellow);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.feedback-button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 30px rgba(255, 193, 7, 0.5);
+}
+
+.feedback-icon {
+    font-size: 1.8rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.feedback-note {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    background: rgba(255, 255, 255, 0.7);
+    padding: 8px 15px;
+    border-radius: var(--border-radius);
+    display: inline-block;
+    margin-top: 10px;
+}
+
 /* Section Styles */
 .story-section,
 .howto-section,
@@ -507,6 +578,15 @@ body {
         padding: 15px 30px;
     }
     
+    .feedback-button {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+    }
+    
+    .feedback-section h2 {
+        font-size: 1.8rem;
+    }
+    
     .language-toggle {
         top: 10px;
         right: 10px;
@@ -546,6 +626,19 @@ body {
     .play-button {
         font-size: 1rem;
         padding: 12px 25px;
+    }
+    
+    .feedback-button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+    
+    .feedback-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .feedback-section {
+        padding: 50px 0;
     }
     
     .play-section,
