@@ -141,9 +141,6 @@ body {
 .author-credit {
     font-size: 1rem;
     color: var(--text-dark);
-    background: rgba(255, 255, 255, 0.6);
-    padding: 8px 16px;
-    border-radius: var(--border-radius);
     display: block;
     margin-top: 15px;
     text-align: center;
@@ -151,7 +148,7 @@ body {
 }
 
 .author-credit a {
-    color: var(--primary-pink);
+    color: var(--white);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
