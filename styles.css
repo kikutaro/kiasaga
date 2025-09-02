@@ -606,6 +606,42 @@ body {
     font-family: 'DotGothic16', monospace;
 }
 
+.footer-developer a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-developer a:hover {
+    color: var(--secondary-pink);
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin: 15px 0;
+}
+
+.footer-x-link {
+    color: var(--white);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.footer-x-link:hover {
+    color: var(--secondary-pink);
+    transform: translateY(-2px);
+}
+
+.x-icon {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 .footer-note {
     font-size: 0.9rem;
     opacity: 0.8;
