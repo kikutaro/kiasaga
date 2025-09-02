@@ -26,7 +26,7 @@
     </div>
 
     <!-- Hero Header -->
-    <header class="hero">
+    <header id="top" class="hero">
         <div class="hero-content">
             <div class="hero-text">
                 <div class="logo">
@@ -48,7 +48,7 @@
     </header>
 
     <!-- Play Game Section -->
-    <section class="play-section">
+    <section id="play" class="play-section">
         <div class="container">
             <h2 data-ja="今すぐ遊ぶ！" data-en="Play Now!">今すぐ遊ぶ！</h2>
             <a href="https://game.kiasaga.love/" class="play-button">
@@ -60,7 +60,7 @@
     </section>
 
     <!-- Compete Section -->
-    <section class="compete-section">
+    <section id="compete" class="compete-section">
         <div class="container">
             <h2 data-ja="クリアした速さを競い合おう！" data-en="Compete for Clearing Speed!">クリアした速さを競い合おう！</h2>
             <p class="compete-description" data-ja="あなたのクリア時間を記録して、他のプレイヤーと競争しよう🏆" data-en="Record your clear time and compete with other players 🏆">あなたのクリア時間を記録して、他のプレイヤーと競争しよう🏆</p>
@@ -73,7 +73,7 @@
     </section>
 
     <!-- Feedback Section -->
-    <section class="feedback-section">
+    <section id="feedback" class="feedback-section">
         <div class="container">
             <h2 data-ja="ゲームの感想を送ってね！" data-en="Share Your Game Experience!">ゲームの感想を送ってね！</h2>
             <p class="feedback-description" data-ja="あなたの感想が次の作品作りのヒントになります✨" data-en="Your feedback helps us create better games ✨">あなたの感想が次の作品作りのヒントになります✨</p>
@@ -87,7 +87,7 @@
     </section>
 
     <!-- Controls Section -->
-    <section class="controls-section">
+    <section id="control" class="controls-section">
         <div class="container">
             <h3 class="controls-title" data-ja="操作方法" data-en="Controls">操作方法</h3>
             <div class="controls-content">
@@ -107,7 +107,7 @@
     </section>
 
     <!-- Story Section -->
-    <section class="story-section">
+    <section id="story" class="story-section">
         <div class="container">
             <div class="section-content">
                 <div class="section-image">
@@ -122,7 +122,7 @@
     </section>
 
     <!-- How to Play Section -->
-    <section class="howto-section">
+    <section id="howtoplay" class="howto-section">
         <div class="container">
             <div class="section-content reverse">
                 <div class="section-text">
@@ -137,7 +137,7 @@
     </section>
 
     <!-- Characters Section -->
-    <section class="characters-section">
+    <section id="character" class="characters-section">
         <div class="container">
             <div class="section-content">
                 <div class="section-image">
@@ -152,7 +152,7 @@
     </section>
 
     <!-- Profile Section -->
-    <section class="profile-section">
+    <section id="profile" class="profile-section">
         <div class="container">
             <div class="section-content reverse">
                 <div class="section-text">
@@ -167,7 +167,7 @@
     </section>
 
     <!-- Quiz Section -->
-    <section class="quiz-section">
+    <section id="quiz" class="quiz-section">
         <div class="container">
             <div class="section-content">
                 <div class="section-image">
@@ -182,7 +182,7 @@
     </section>
 
     <!-- BGM Section -->
-    <section class="bgm-section">
+    <section id="bgm" class="bgm-section">
         <div class="container">
             <div class="section-content reverse">
                 <div class="section-text">
@@ -197,7 +197,7 @@
     </section>
 
     <!-- Features Section -->
-    <section class="features-section">
+    <section id="features" class="features-section">
         <div class="container">
             <div class="section-content reverse">
                 <div class="section-text">
@@ -225,5 +225,64 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"ItemList",
+      "itemListElement":[
+        {
+          "@type":"ListItem",
+          "position":1,
+          "url":"https://kiasaga.love/"
+        },
+        {
+          "@type":"ListItem",
+          "position":2,
+          "url":"https://kiasaga.love/#play"
+        },
+        {
+          "@type":"ListItem",
+          "position":3,
+          "url":"https://kiasaga.love/#compete"
+        },
+        {
+          "@type":"ListItem",
+          "position":4,
+          "url":"https://kiasaga.love/#feedback"
+        },
+        {
+          "@type":"ListItem",
+          "position":5,
+          "url":"https://kiasaga.love/#howtoplay"
+        },
+        {
+          "@type":"ListItem",
+          "position":6,
+          "url":"https://kiasaga.love/#character"
+        },
+        {
+          "@type":"ListItem",
+          "position":7,
+          "url":"https://kiasaga.love/#profile"
+        },
+        {
+          "@type":"ListItem",
+          "position":8,
+          "url":"https://kiasaga.love/#quiz"
+        },
+        {
+          "@type":"ListItem",
+          "position":9,
+          "url":"https://kiasaga.love/#bgm"
+        },
+        {
+          "@type":"ListItem",
+          "position":10,
+          "url":"https://kiasaga.love/#features"
+        }
+      ]
+    }
+    </script>
 </body>
 </html>
